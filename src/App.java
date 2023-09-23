@@ -26,16 +26,19 @@ public class App {
                 iphone.realizarChamada();
                 iphone.atenderLigacao();
                 iphone.iniciarCorreioVoz();
+                break;
             case 2:
                 System.out.println("Opção Navegador Internet");
                 iphone.exibirPagina();
                 iphone.adicionarNovaAba();
                 iphone.atualizarPagina();
+                break;
             case 3:
                 System.out.println("Opção Reprodutor Musical");
                 iphone.tocarMusica();
                 iphone.pausarMusica();
                 iphone.selecionarMusica();
+                break;
 
             default:
                 System.out.println("Opção inválida. Desligando Iphone");

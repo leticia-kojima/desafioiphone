@@ -1,10 +1,6 @@
 package configs;
 
-public class Iphone {
-
-    private NavegadorInternet internet;
-    private AparelhoTelefonico telefone;
-    private ReprodutorMusical musica;
+public class Iphone implements NavegadorInternet, AparelhoTelefonico, ReprodutorMusical{
 
     private String modeloCelular;
     private int anoFabricacao;
@@ -25,12 +21,6 @@ public class Iphone {
         anoFabricacao = newAnoFabricacao;
     }
 
-    public Iphone() {
-        internet = new NavegadorInternet();
-        telefone = new AparelhoTelefonico();
-        musica = new ReprodutorMusical();
-    }
-
     public void IphoneConfig(String modeloCelular, int anoFabricacao) {
         this.modeloCelular = modeloCelular;
         this.anoFabricacao = anoFabricacao;
@@ -42,41 +32,41 @@ public class Iphone {
 
     //Aparelho Telefonico
     public void realizarChamada() {
-        telefone.realizarChamada();
+        System.out.println("Realizando chamada - Aparelho Telefonico");
     }
 
     public void atenderLigacao() {
-        telefone.atenderLigacao();
+        System.out.println("Atendendo ligação - Aparelho Telefonico");
     }
 
     public void iniciarCorreioVoz() {
-        telefone.iniciarCorreioVoz();
+        System.out.println("Iniciando Correio de voz - Aparelho Telefonico");
     }
 
     //Navegador Internet
     public void exibirPagina() {
-        internet.exibirPagina();
+        System.out.println("Exibindo página - Navegador Internet");
     }
 
     public void adicionarNovaAba() {
-        internet.adicionarNovaAba();
+        System.out.println("Adicionando aba - Navegador Internet");
     }
 
     public void atualizarPagina() {
-        internet.atualizarPagina();
+        System.out.println("Atualizando pagina  - Navegador Internet");
     }
 
     //Reprodutor Musical
     public void tocarMusica(){
-        musica.tocarMusica();
+        System.out.println("Tocando música - Reprodutor Musical");
     }
 
     public void pausarMusica(){
-        musica.pausarMusica();
+        System.out.println("Pausando música - Reprodutor Musical");
     }
 
     public void selecionarMusica(){
-        musica.selecionarMusica();
+        System.out.println("Selecionando música - Reprodutor Musical");
     }
     
 

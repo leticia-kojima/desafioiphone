@@ -1,17 +1,9 @@
 package configs;
 
-public class ReprodutorMusical {
+public interface ReprodutorMusical {
 
-    void tocarMusica(){
-        System.out.println("Tocando música - Reprodutor Musical");
-    }
-
-    void pausarMusica(){
-        System.out.println("Pausando música - Reprodutor Musical");
-    }
-
-    void selecionarMusica(){
-        System.out.println("Selecionando música - Reprodutor Musical");
-    }
+    public void tocarMusica();
+    public void pausarMusica();
+    public void selecionarMusica();
     
 }
